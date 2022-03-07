@@ -48,6 +48,7 @@
 	<p>Is Registered Age: <?php echo var_dump($isRegistered); ?></p>
 
 	<h2>Arithmetic Operators</h2>
+
 	<p>Sum: <?php echo $x + $y ?></p>
 	<p>Difference: <?php echo $x - $y ?></p>
 	<p>Product: <?php echo $x * $y ?></p>
@@ -59,6 +60,33 @@
 	<p>Strict Equality: <?php echo var_dump($x === '56.2') ?></p>
 	<p>Loose Equality: <?php echo var_dump($x != '56.2') ?></p>
 	<p>Strict Equality: <?php echo var_dump($x !== '56.2') ?></p>
+
+	<h2>Greater/Lesser Operators</h2>
+
+	<p>is Lesser: <?php echo var_dump($x < $y); ?></p>
+	<p>is Greater: <?php echo var_dump($x > $y); ?></p>
+
+	<h2>Logical Operators</h2>
+	<p>Are all Requirements Met: <?php echo var_dump($isLegalAge && $isRegistered) ?></p>
+	<p>Are some Requirements Met: <?php echo var_dump($isLegalAge || $isRegistered) ?></p>
+	<p>Are some Requirements not Met: <?php echo var_dump(!$isLegalAge && !$isRegistered) ?></p>
+
+	<h1>Functions</h1>
+
+	<p>Full Name: <?php echo getFullName('John' , 'D', 'Smith'); ?></p>
+
+	<h1>Selection Control Structures</h1>
+	
+	<h2>If-ElseIf-Else</h2>
+	<p><?php echo determineTyphoonIntensity(12); ?></p>
+
+	<h2>Ternary Sample (Is Underage?)</h2>
+
+	<p>78: <?php echo var_dump(isUnderAge(78)); ?></p>
+	<p>17: <?php echo var_dump(isUnderAge(17)); ?></p>
+
+	<h2>Switch</h2>
+	<p><?php echo determineComputerUser(8); ?></p>
 
 </body>
 </html>
