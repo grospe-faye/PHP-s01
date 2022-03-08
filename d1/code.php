@@ -122,6 +122,27 @@ function determineComputerUser($computerNumber){
 	}
 }
 
+// Try-Catch-Finally
+function greeting($str){
+	try{
+		if(gettype($str) == "string"){
+			echo $str;
+		}
+		else{
+			// will trigger catch block
+			throw new Exception("Oops!");
+			
+		}
+	}
+	// eto yung ma ttrigger
+	catch(Exception $e){
+		echo $e->getMessage();
+	}
+	finally{
+		echo "I did it again!";
+	}
+}
+
 
 
 

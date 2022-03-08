@@ -88,5 +88,8 @@
 	<h2>Switch</h2>
 	<p><?php echo determineComputerUser(8); ?></p>
 
+	<h2>Try-Catch-Finally</h2>
+	<p><?php echo greeting('hello'); ?></p>
+
 </body>
 </html>
